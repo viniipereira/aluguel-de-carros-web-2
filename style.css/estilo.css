@@ -1,0 +1,72 @@
+body {
+  background-image: url("../imagens/login.png");
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.div-login {
+  background-color: #280328;
+}
+
+.login {
+  padding-top: 3em;
+}
+
+.logo-login {
+  height: 100px;
+  width: auto;
+}
+
+#inputs-login {
+  background-color: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.labels {
+  color: white;
+  width: auto;
+}
+
+.btn-login {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.mudar-senha {
+  margin-bottom: 1em;
+}
+
+.input-relogio {
+  margin-top: 1em;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+}
+
+a {
+  width: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
