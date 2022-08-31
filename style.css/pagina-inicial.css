@@ -1,5 +1,9 @@
 .body-inicial {
-  background-color: #4f0051;
+  background: linear-gradient(rgb(122, 93, 122), #4f0051);
+}
+
+.card {
+  background: linear-gradient();
 }
 
 .div-cards {
