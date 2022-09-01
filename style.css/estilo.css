@@ -9,7 +9,7 @@ body {
 }
 
 .div-login {
-  background-color: #280328;
+  background: linear-gradient(#280328, rgb(138, 5, 172));
 }
 
 .login {
