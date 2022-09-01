@@ -4,11 +4,15 @@ const logado = () => {
   })();
 };
 
-let login = (document.getElementById("login").onclick = function () {
-  (function paginaInicial() {
-    return (window.location.href = "http://127.0.0.1:5500/pagina-inicial.html");
-  })();
-});
+if (document.getElementById("login") == null) {
+} else {
+  let login = (document.getElementById("login").onclick = function () {
+    (function paginaInicial() {
+      return (window.location.href =
+        "http://127.0.0.1:5500/pagina-inicial.html");
+    })();
+  });
+}
 
 function duvida() {
   prompt("Envie a sua duvida!");
@@ -58,7 +62,6 @@ function mudarCard(card) {
   document.querySelector(card).style.backgroundColor = "#C76C81";
   document.querySelector(card).style.transition = "2s";
   document.querySelector(card).style.scale = "1.1";
-  console.log(document.querySelector(card).style);
 }
 
 function voltarCard(card) {
