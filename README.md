@@ -42,10 +42,10 @@ Eventos
 Acesso aos elementos DOM do HTML
 
 - [ ] Via referência DOM pelo id do elemento HTML
-- [ ] Via getElementByID()
+- [X] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [X] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
@@ -57,9 +57,9 @@ Tratadores de Evento
 Objetos Nativos
 
 - [ ] Usar pelo menos 3 métodos de manipulação de array
-- [ ] Usar laço de repetição (for..in ou for..of ou forEach)
+- [X] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
-- [ ] String Template
+- [X] String Template
 
 Objetos
 
