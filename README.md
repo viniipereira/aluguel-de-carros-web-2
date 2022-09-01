@@ -41,7 +41,7 @@ Eventos
 
 Acesso aos elementos DOM do HTML
 
-- [ ] Via referência DOM pelo id do elemento HTML
+- [X] Via referência DOM pelo id do elemento HTML
 - [X] Via getElementByID()
 - [ ] Via getElementsByName()
 - [X] Via getElementsByTagName()
