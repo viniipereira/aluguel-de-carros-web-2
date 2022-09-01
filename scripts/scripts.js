@@ -4,13 +4,42 @@ const logado = () => {
   })();
 };
 
+const usuario = {
+  nome: "Vinicius",
+  senha: "1234",
+  email: "vini@gmail.com",
+};
+
+window.localStorage.setItem(1, usuario.nome);
+window.localStorage.setItem(2, usuario.senha);
+window.localStorage.setItem(3, usuario.email);
+
+const verificarUsuario = () => {
+  if (
+    document.getElementsByTagName("form")[0].senha.value ==
+      window.localStorage.getItem(2) &&
+    document.getElementsByName("email-login")[0][0].value ==
+      window.localStorage.getItem(3)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 if (document.getElementById("login") == null) {
 } else {
   let login = (document.getElementById("login").onclick = function () {
-    (function paginaInicial() {
-      return (window.location.href =
-        "http://127.0.0.1:5500/pagina-inicial.html");
-    })();
+    if (verificarUsuario()) {
+      alert("Logado com sucesso");
+      return window.location.assign(
+        "http://127.0.0.1:5500/pagina-inicial.html"
+      );
+    } else {
+      document.getElementsByTagName("form")[0].senha.value = "";
+      document.getElementsByTagName("form")[0].email.value = "";
+      alert("Email ou senha inválidos!");
+    }
   });
 }
 
@@ -39,7 +68,7 @@ let relogio = () => {
   window.setTimeout("relogio()", 1000);
 };
 let color = () => {
-  return "#C78C94";
+  return "	#FF00FF";
 };
 
 let mudarInput = function (obj) {
