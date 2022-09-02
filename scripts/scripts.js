@@ -4,6 +4,9 @@ const logado = () => {
   })();
 };
 
+
+
+
 const usuario = {
   nome: "Vinicius",
   senha: "1234",
@@ -113,3 +116,49 @@ for (let contador = 0; contador < listaDeCards.length; contador++) {
     voltarCard(idCard);
   };
 }
+
+
+function  cadastro() {
+class Cliente {
+  constructor(id,email,senha) {
+    this.id= id
+    this.email=email
+    this.senha=senha
+  }
+
+  alterarSenha(novaSenha) {
+    this.senha = novaSenha;
+  }
+
+  alterarEmail(novoEmail) {
+    this.email = novoEmail
+  }
+}
+
+let email = document.getElementsByTagName("form")[0].email.value;
+let senha = document.getElementsByTagName("form")[0].senha.value;
+let senhaRP = document.getElementsByTagName("form")[0].senhaRep.value;
+
+if(senha == senhaRP){
+  let id = window.localStorage.length + 1;
+    let usuario = new Cliente(id,email,senha)
+    let user = [usuario.email ,usuario.senha ]
+    window.localStorage.setItem(id,user)
+  
+}else {
+  console.log("deu erro")
+}
+}
+
+
+
+(document.getElementById("cadastro").onclick = function () {
+    cadastro();
+    document.getElementsByTagName("form")[0].senha.value = "";
+    document.getElementsByTagName("form")[0].email.value = "";
+  
+});
+
+ console.log(window.localStorage.getItem(5).indexOf(','))
+ console.log(window.localStorage.getItem(5).substring(0,23))
+

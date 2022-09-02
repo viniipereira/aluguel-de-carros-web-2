@@ -9,7 +9,13 @@ body {
 }
 
 .div-login {
-  background: linear-gradient(#280328, rgb(138, 5, 172));
+  background: linear-gradient(#630463, rgb(138, 5, 172));
+  border-radius: 10px;
+}
+
+.div-cadastro {
+  background: linear-gradient(#d4d4d4, rgb(36, 36, 36), black);
+  border-radius: 10px;
 }
 
 .login {
