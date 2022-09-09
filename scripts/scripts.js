@@ -4,36 +4,57 @@ const logado = () => {
   })();
 };
 
+let senhas = []
+let users = []
 
 
+for (let i = 1; i <= window.localStorage.length; i++) {
+  let sub = window.localStorage.getItem(i).indexOf(',')
+  users.push({email:window.localStorage.getItem(i).substring(0,sub),senha:window.localStorage.getItem(i).substring(sub+1,)})
+  
+}
 
-const usuario = {
-  nome: "Vinicius",
-  senha: "1234",
-  email: "vini@gmail.com",
-};
-
-window.localStorage.setItem(1, usuario.nome);
-window.localStorage.setItem(2, usuario.senha);
-window.localStorage.setItem(3, usuario.email);
 
 const verificarUsuario = () => {
-  if (
-    document.getElementsByTagName("form")[0].senha.value ==
-      window.localStorage.getItem(2) &&
-    document.getElementsByName("email-login")[0][0].value ==
-      window.localStorage.getItem(3)
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+    
+  // for (let i = 0; i < users.length; i++) {
+  //   if(users[i].senha == document.getElementsByTagName("form")[0].senha.value && users[i].email == document.getElementsByName("email-login")[0][0].value){
+  //     return true
+  //     }
+  // }
+
+  let user = false
+for (const key of users) {
+  if(key.senha == document.getElementsByTagName("form")[0].senha.value && key.email == document.getElementsByName("email-login")[0][0].value){
+    user =  true
+    }
+}
+return user
+  // for (const user of users) {
+  //   console.log(user.email)
+  //   console.log(user.senha == document.getElementsByTagName("form")[0].senha.value)
+  //   if(user.senha == document.getElementsByTagName("form")[0].senha.value && user.email == document.getElementsByName("email-login")[0][0].value){
+  //     user = true
+  //     return user
+  //     }
+  // }
+
+  // users.forEach(element => {
+  //   console.log(element.email == document.getElementsByName("email-login")[0][0].value)
+  //   console.log(element.senha == document.getElementsByTagName("form")[0].senha.value)
+  //   if(element.senha == document.getElementsByTagName("form")[0].senha.value && element.email == document.getElementsByName("email-login")[0][0].value){
+  //     return true
+  //   }else {
+  //     return false
+  //   }
+  // });
 };
 
 if (document.getElementById("login") == null) {
 } else {
   let login = (document.getElementById("login").onclick = function () {
-    if (verificarUsuario()) {
+    if (verificarUsuario() == true) {
+      console.log("ta aqui")
       alert("Logado com sucesso");
       return window.location.assign(
         "http://127.0.0.1:5500/pagina-inicial.html"
@@ -158,6 +179,8 @@ if(senha == senhaRP){
     document.getElementsByTagName("form")[0].email.value = "";
   
 });
+
+
 
  console.log(window.localStorage.getItem(5).indexOf(','))
  console.log(window.localStorage.getItem(5).substring(0,23))
