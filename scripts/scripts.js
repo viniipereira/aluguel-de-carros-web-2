@@ -17,12 +17,6 @@ for (let i = 1; i <= window.localStorage.length; i++) {
 
 const verificarUsuario = () => {
     
-  // for (let i = 0; i < users.length; i++) {
-  //   if(users[i].senha == document.getElementsByTagName("form")[0].senha.value && users[i].email == document.getElementsByName("email-login")[0][0].value){
-  //     return true
-  //     }
-  // }
-
   let user = false
 for (const key of users) {
   if(key.senha == document.getElementsByTagName("form")[0].senha.value && key.email == document.getElementsByName("email-login")[0][0].value){
@@ -30,24 +24,7 @@ for (const key of users) {
     }
 }
 return user
-  // for (const user of users) {
-  //   console.log(user.email)
-  //   console.log(user.senha == document.getElementsByTagName("form")[0].senha.value)
-  //   if(user.senha == document.getElementsByTagName("form")[0].senha.value && user.email == document.getElementsByName("email-login")[0][0].value){
-  //     user = true
-  //     return user
-  //     }
-  // }
 
-  // users.forEach(element => {
-  //   console.log(element.email == document.getElementsByName("email-login")[0][0].value)
-  //   console.log(element.senha == document.getElementsByTagName("form")[0].senha.value)
-  //   if(element.senha == document.getElementsByTagName("form")[0].senha.value && element.email == document.getElementsByName("email-login")[0][0].value){
-  //     return true
-  //   }else {
-  //     return false
-  //   }
-  // });
 };
 
 if (document.getElementById("login") == null) {
@@ -171,17 +148,10 @@ if(senha == senhaRP){
 }
 }
 
-
-
 (document.getElementById("cadastro").onclick = function () {
     cadastro();
     document.getElementsByTagName("form")[0].senha.value = "";
     document.getElementsByTagName("form")[0].email.value = "";
   
 });
-
-
-
- console.log(window.localStorage.getItem(5).indexOf(','))
- console.log(window.localStorage.getItem(5).substring(0,23))
 
