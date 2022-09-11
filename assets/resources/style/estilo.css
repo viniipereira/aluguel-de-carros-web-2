@@ -1,5 +1,5 @@
 body {
-  background-image: url("../imagens/login.png");
+  background-image: url("../images/login.png");
   background-size: cover;
   margin: 0;
 }
@@ -27,7 +27,8 @@ body {
   width: auto;
 }
 
-#inputs-login {
+#email,
+#senha {
   background-color: transparent;
   border-left: 0;
   border-top: 0;
@@ -37,6 +38,15 @@ body {
 .labels {
   color: white;
   width: auto;
+}
+
+.centralizar {
+  text-align: center;
+  cursor: pointer;
+}
+
+.centralizar::placeholder {
+  color: black;
 }
 
 .btn-login {
