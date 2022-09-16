@@ -10,3 +10,25 @@
   margin-top: 60px;
   margin-left: auto;
 }
+
+
+.btn-config {
+background-color:transparent;
+border-color: #4f0051;
+margin-left: 5px;
+color: #4f0051;
+}
+
+.btn-config:hover {
+  background-color: blueviolet;
+}
+
+.btn-aluga {
+  background-color: transparent;
+  border-color:#4f0051;
+color:#4f0051
+}
+
+.btn-aluga:hover {
+  background-color: blueviolet;
+}

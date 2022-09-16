@@ -34,7 +34,7 @@ function voltarInput(obj) {
 }
 
 function mudarCard(card) {
-  document.querySelector(card).style.backgroundColor = "#C76C81";
+  document.querySelector(card).style.backgroundColor = "#f014c0";
   document.querySelector(card).style.transition = "2s";
   document.querySelector(card).style.scale = "1.1";
 }
