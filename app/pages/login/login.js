@@ -1,13 +1,14 @@
-let senhas = [];
 let users = [];
 
 for (let i = 1; i <= window.localStorage.length; i++) {
   let sub = window.localStorage.getItem(i).indexOf(",");
-  users.push({
+
+  let user = {
     email: window.localStorage.getItem(i).substring(0, sub),
     senha: window.localStorage.getItem(i).substring(sub + 1),
-  });
-  
+  };
+
+  users.push(user);
 }
 
 const verificarUsuario = () => {
@@ -17,7 +18,6 @@ const verificarUsuario = () => {
       key.senha == document.getElementsByTagName("form")[0].senha.value &&
       key.email == document.getElementsByName("email-login")[0][0].value
     ) {
-     
       user = true;
     }
   }

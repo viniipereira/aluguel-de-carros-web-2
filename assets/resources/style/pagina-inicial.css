@@ -1,5 +1,5 @@
 .body-inicial {
-  background: linear-gradient(rgb(122, 93, 122), #4f0051);
+  background: linear-gradient(#ffffff, rgb(36, 36, 36), blueviolet);
 }
 
 .card {
@@ -11,12 +11,11 @@
   margin-left: auto;
 }
 
-
 .btn-config {
-background-color:transparent;
-border-color: #4f0051;
-margin-left: 5px;
-color: #4f0051;
+  background-color: transparent;
+  border-color: #4f0051;
+  margin-left: 5px;
+  color: #4f0051;
 }
 
 .btn-config:hover {
@@ -25,8 +24,8 @@ color: #4f0051;
 
 .btn-aluga {
   background-color: transparent;
-  border-color:#4f0051;
-color:#4f0051
+  border-color: #4f0051;
+  color: #4f0051;
 }
 
 .btn-aluga:hover {

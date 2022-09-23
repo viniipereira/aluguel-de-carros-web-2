@@ -46,8 +46,7 @@ function voltarCard(card) {
 
 const listaDeCards = document.querySelectorAll(".card");
 
-for (let contador = 0; contador < listaDeCards.length; contador++) {
-  const card = listaDeCards[contador];
+listaDeCards.forEach((card) => {
   const sobreOCard = card.classList[1];
   const idCard = `#${sobreOCard}`;
 
@@ -58,4 +57,18 @@ for (let contador = 0; contador < listaDeCards.length; contador++) {
   card.onmouseout = function () {
     voltarCard(idCard);
   };
-}
+});
+
+// for (let contador = 0; contador < listaDeCards.length; contador++) {
+//   const card = listaDeCards[contador];
+//   const sobreOCard = card.classList[1];
+//   const idCard = `#${sobreOCard}`;
+
+//   card.onmouseover = function () {
+//     mudarCard(idCard);
+//   };
+
+//   card.onmouseout = function () {
+//     voltarCard(idCard);
+//   };
+// }
