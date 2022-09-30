@@ -27,8 +27,9 @@ const verificarUsuario = () => {
 let login = (document.getElementById("login").onclick = function () {
   if (verificarUsuario() == true) {
     alert("Logado com sucesso!!");
+
     window.location.assign(
-      "http://127.0.0.1:5500/app/pages/pagina-inicial/pagina-inicial.html"
+      "http://127.0.0.1:5500/aluguel-de-carros-web-2/app/pages/pagina-inicial/pagina-inicial.html"
     );
   } else {
     document.getElementsByTagName("form")[0].senha.value = "";
