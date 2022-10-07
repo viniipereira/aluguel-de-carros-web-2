@@ -25,3 +25,17 @@ setInterval(() => {
   chave ? (chave = false) : (chave = true);
   alterarCor(chave);
 }, 3000);
+
+const listaDeBotao = document.querySelectorAll(".btn-config");
+
+listaDeBotao.forEach((card) => {
+  const sobreOCard = card.classList[1];
+
+  const idCard = `#${sobreOCard}`;
+
+  card.onclick = function () {
+    window.location.assign(
+      "http://127.0.0.1:5500/aluguel-de-carros-web-2/app/pages/caracteristicas/caracteristicas.html"
+    );
+  };
+});
