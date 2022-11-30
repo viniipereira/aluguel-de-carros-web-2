@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="../../../assets/resources/style/minhas-tarefas.css">
+    <!-- JS -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Meu dia</h1>
+            <h2 id="horario"></h2>
+            <h3 id="data"></h3>
+        </div>
+        <button onclick="openModal()" class="open-modal-btn" id="btn-adicionar">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </header>
+
+    <main>
+        <ul class="tarefas-dia" id="tarefas-dia">
+        </ul>
+          <div class="modal-container">
+            <div class="adicionar-tarefa modal">
+                <div>
+                    <h2 class="titulo-modal"></h2>
+                    <button onclick="closeModal()" id="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <form id="nova-tarefa">
+                    <label for="titulo-tarefa">Título</label>
+                    <input title="Titulo deve conter mais de 3 caracteres" pattern="^[A-Z][a-z]{3,}$" type="text" name="titulo-tarefa" id="titulo-tarefa" required>
+                    <label for="categoria-tarefa">Categoria</label>
+                    <input type="text" name="categoria-tarefa" id="categoria-tarefa" required>
+                    <label for="horario-tarefa">Hora</label>
+                    <input type="time" name="horario-tarefa" id="horario-tarefa">
+                    <div>
+                        <button type="submit" id="btn-salvar-tarefa">Salvar</button>
+                        <button onclick="closeModal()" id="btn-cancelar-tarefa">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

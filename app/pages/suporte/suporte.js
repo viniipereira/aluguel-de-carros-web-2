@@ -38,4 +38,20 @@ document.getElementById('formulario').onsubmit = (e) => {
     valorNome.style.backgroundColor = '#FF0000';
     return alert('nome precisa ser maior doque 3 caracteres!!');
   }
+
+  function recarregar() {
+    setTimeout(() => {
+      location.reload();
+    }, 5000);
+  }
+
+  $(document).ready(() => {
+    $('.botao').click(() => {
+      $('#img1')[0].style.display = '';
+
+      $('#img1').fadeToggle('slow');
+      $('#img1').delay(3000).fadeToggle('slow');
+      recarregar();
+    });
+  });
 };

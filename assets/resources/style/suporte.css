@@ -35,3 +35,14 @@ input:valid {
 label {
     color: rgb(0, 0, 0);
 }
+
+
+#img1 {
+    width: 50%;
+               height: 50%;
+               border-radius: 20px;
+               display: flex;
+               margin-left: 25%;
+               display: none;
+               margin-bottom: 10px;
+}

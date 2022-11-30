@@ -33,20 +33,20 @@ function voltarInput(obj) {
 }
 
 function mudarCard(card) {
-  document.querySelector(card).style.backgroundColor = '#f014c0';
+  document.querySelector(card).style.backgroundColor = '#993399';
   document.querySelector(card).style.transition = '2s';
   document.querySelector(card).style.scale = '1.1';
 }
 
 function voltarCard(card) {
-  document.querySelector(card).style.backgroundColor = '#FFFFFF';
+  document.querySelector(card).style.backgroundColor = '#1a1a1c';
   document.querySelector(card).style.scale = '1';
 }
 
 const listaDeCards = document.querySelectorAll('.card');
 
 listaDeCards.forEach((card) => {
-  const sobreOCard = card.classList[1];
+  const sobreOCard = card.classList[3];
   const idCard = `#${sobreOCard}`;
 
   card.onmouseover = function () {

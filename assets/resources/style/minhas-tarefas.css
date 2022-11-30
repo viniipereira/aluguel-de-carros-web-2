@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fdfdfd;
+    font-family: helvetica, sans-serif;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 550px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+}
+
+header button{
+   align-self:center;
+   width: 40px;
+   height: 40px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+header button i{
+    font-size: xx-large;
+    color: #fdfdfd;
+}
+
+main{
+    width: 100%;
+    max-width: 550px;
+}
+
+.modal-container{
+    /* width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0; */
+    display: grid;
+    place-items: center;  
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s; 
+}
+
+.modal{
+    background-color: #fdfdfd;
+    width: 550px;
+
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0  10px 0 #00000070;
+
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.modal-show{
+    opacity: 1; 
+}
+
+.none{
+    display: none;
+}
+
+
+
+/* TAREFAS DO DIA */
+
+.msg-nao-ha-tarefas{
+    background-color: #fdfdfd;
+    opacity: 0.8;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.tarefas-dia li{
+    background-color: #fdfdfd;
+    opacity: 0.8;
+    color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.tarefas-dia .descricao-tarefa-dia{
+    flex: 2;
+    margin: 0.5rem;
+    text-align: left;
+}
+
+.tarefas-dia button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarefas-dia .btn-tarefa-concluida{
+    border-radius: 50%;
+    margin-block-end: 0px;
+}
+
+.tarefa-concluida{
+    background-color: rgb(20, 20, 20);
+}
+
+.tarefas-dia .btn-editar-tarefa{
+    background-color: rgb(20, 20, 20);
+}
+
+.tarefas-dia .btn-editar-tarefa i{
+    color: #fdfdfd;
+}
+.tarefas-dia button i{
+    font-size: large;
+}
+
+/* ADICIONAR  E EDITAR TAREFA */
+
+.adicionar-tarefa{
+    background-color: #fdfdfd;
+    color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+.adicionar-tarefa div{
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem;
+   margin: 0.5rem 0rem 0rem 0rem;
+}
+
+#btn-close{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-close i{
+    font-size: large;
+}
+
+.adicionar-tarefa form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+#nova-tarefa input{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    height: 38px;
+    max-width: 100%;
+}
+
+#nova-tarefa div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+#nova-tarefa div button{
+    height: 40px;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#btn-salvar-tarefa{
+    background-color: rgb(20, 20, 20);
+    color: #fdfdfd;
+    margin-right: 0.5rem;
+}
+
+#btn-cancelar-tarefa{
+    background-color: #fdfdfd;
+}
+
+#btn-salvar-tarefa:hover{
+    background-color: #fdfdfd;
+    color:  rgb(20, 20, 20);
+}
+
+#btn-cancelar-tarefa:hover{
+    background-color: rgb(20, 20, 20);
+    color: #fdfdfd;
+}
+
