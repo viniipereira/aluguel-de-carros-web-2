@@ -79,32 +79,32 @@ Qualidade do código
 
 Formulário
 
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
-- [ ] Validação de formulário com HTML5 API
-  - [ ] Customizar as mensagens nos balões de mensagem
-  - [ ] Usar os atributos de validação dos inputs
-  - [ ] Usar expressões regulares
-- [ ] Ler e escrever em elementos input com a propriedade value
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+- [X] Validação de formulário com onsubmit usando os métodos tradicionais
+- [X] Validação de formulário com HTML5 API
+  - [X] Customizar as mensagens nos balões de mensagem
+  - [X] Usar os atributos de validação dos inputs
+  - [X] Usar expressões regulares
+- [X] Ler e escrever em elementos input com a propriedade value
+-[X] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
-- [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
+- [X] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
 jQuery
 
-- [ ] Uso de seletores CSS - id, classe e tag
+- [X] Uso de seletores CSS - id, classe e tag
 - [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
-- [ ] Efeitos fade ou slide
+- [X] Efeitos fade ou slide
 - [ ] Especificar o tratador de algum evento via jQuery
-- [ ] Manipulação do CSS via função css() e addClass()/removeClass()
-- [ ] Manipulação do conteúdo de um input e div usando jQuery
+- [X] Manipulação do CSS via função css() e addClass()/removeClass()
+- [X] Manipulação do conteúdo de um input e div usando jQuery
 - [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
-- [ ] Leitura e escrita de JSON
+- [X] LocalStorage ou SessionStorage
+- [X] Leitura e escrita de dados simples
+- [X] Leitura e escrita de JSON
 
 Ajax com Backend
 
