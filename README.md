@@ -69,13 +69,13 @@ Objetos
 
 Qualidade do código
 
-- [ ] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
-- [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
+- [X] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
+- [X] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
 - [ ] Usar strict mode
 - [ ] Usar Module Pattern
-- [ ] Usar pasta assets e subpastas resources e libraries para organizar o código
-- [ ] Usar let ou const ao invés de var
-- [ ] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
+- [X] Usar pasta assets e subpastas resources e libraries para organizar o código
+- [X] Usar let ou const ao invés de var
+- [X] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
 Formulário
 
